@@ -1,5 +1,5 @@
 const getGifs = async (category) => {
-  const url = `http://api.giphy.com/v1/gifs/search?q=${encodeURI(
+  const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(
     category
   )}&limit=10&api_key=3tVioBLznMcTZUnTg0NWrSzXCNuPfaer` //encodeURI ajusta en la petición lo que se recibe
   const resp = await fetch(url)
