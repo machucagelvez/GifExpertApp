@@ -12,7 +12,7 @@ export const AddCategory = ({ setCategories }) => {
     e.preventDefault() //previene que se actualice toda la página cuanto e hace el submit
 
     if (inputValue.trim().length > 2) {
-      setCategories((cats) => [...cats, inputValue]) //setCategories tiene el estado anterior, que se está recibiendo en cats
+      setCategories((cats) => [inputValue, ...cats]) //setCategories tiene el estado anterior, que se está recibiendo en cats
       setInputValue('') // Borra lo que se acaba de enviar
     }
   }
